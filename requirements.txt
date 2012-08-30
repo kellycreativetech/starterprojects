@@ -1,1 +1,10 @@
--r reqs/prod.txt
+Django
+South
+Fabric
+gunicorn
+psycopg2
+django-debug-toolbar
+django-compressor
+django-forms-bootstrap
+lxml
+BeautifulSoup
