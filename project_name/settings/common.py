@@ -12,8 +12,8 @@ TEMPLATE_DEBUG = DEBUG
 
 
 ADMINS = (
-    ('Issac Kelly', 'issac@servee.com'),
-    ('Josh Boles', 'josh@servee.com'),
+    ('Issac Kelly', 'issac+{{ project_name }}@servee.com'),
+    ('Josh Boles', 'josh+{{ project_name }}@servee.com'),
 )
 MANAGERS = ADMINS
 
@@ -119,6 +119,15 @@ INSTALLED_APPS = [
     'compressor',
     'gunicorn',
     'south',
+
+    'servee',
+    'servee_uploadify',
+    'servee_tinymce',
+    'servee.frontendadmin',
+    'servee.wysiwyg',
+    'servee_image',
+    'servee_gallery',
+    'chunks', # be sure to install this from issackelly/django-chunks.git
 ]
 
 LOGGING = {
@@ -145,5 +154,7 @@ LOGGING = {
     }
 }
 
+LOGIN_URL = "/accounts/login/"
+LOGIN_REDIRECT_URL = "/"
 
 WSGI_APPLICATION = '{{ project_name }}.wsgi.application'

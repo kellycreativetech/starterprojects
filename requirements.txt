@@ -8,3 +8,11 @@ django-compressor
 django-forms-bootstrap
 lxml
 BeautifulSoup
+
+django-servee
+django-servee-tinymce
+django-servee-uploadify
+django-servee-image
+django-servee-gallery
+http://github.com/issackelly/django-chunks/tarball/master
+

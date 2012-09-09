@@ -3,3 +3,8 @@
 {% compress css %}
 <link rel="stylesheet" href="{{ STATIC_URL }}less/bootstrap.less" type="text/less" />
 {% endcompress %}
+
+{% if request.user.is_staff %}
+    <link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}servee/css/admin.css" />
+    <link rel="stylesheet" media="screen" href="{{ STATIC_URL }}uni_form/uni-form.css" />
+{% endif %}

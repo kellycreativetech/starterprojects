@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-{% load i18n %}
+{% load i18n chunks %}
 <html lang="{{ LANGUAGE_CODE }}">
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,4 +16,5 @@
         {% include "_scripts.html" %}
         {% endblock %}
     </body>
+    <footer>{% chunk "footer" %}</footer>
 </html>

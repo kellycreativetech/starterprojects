@@ -1,0 +1,37 @@
+[
+    {
+        "fields": {
+            "date_joined": "2012-09-09T19:33:36.609",
+            "email": "issac@servee.com",
+            "first_name": "",
+            "groups": [],
+            "is_active": true,
+            "is_staff": true,
+            "is_superuser": true,
+            "last_login": "2012-09-09T19:33:42.578",
+            "last_name": "",
+            "password": "pbkdf2_sha256$10000$9Z3VJkmYn5aP$v9AMXDif/E+QmwAlScECjenwmqHaa/cBWqado7L6NC4=",
+            "user_permissions": [],
+            "username": "issackelly"
+        },
+        "model": "auth.user",
+        "pk": 1
+    },
+    {
+        "fields": {
+            "domain": "localhost:8000",
+            "name": "LocalHost"
+        },
+        "model": "sites.Site",
+        "pk": -1
+    },
+    {
+        "fields": {
+            "content": "<p><span><a href=\"/accounts/login/\" title=\"Login\">Login</a></span></p>",
+            "key": "footer"
+        },
+        "model": "chunks.chunk",
+        "pk": 1
+    }
+]
+
