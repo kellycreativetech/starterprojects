@@ -10,6 +10,7 @@ lxml
 BeautifulSoup
 
 django-servee
+django-uni-form
 django-servee-tinymce
 django-servee-uploadify
 django-servee-image

@@ -127,6 +127,7 @@ INSTALLED_APPS = [
     'servee.wysiwyg',
     'servee_image',
     'servee_gallery',
+    'uni_form',
     'chunks', # be sure to install this from issackelly/django-chunks.git
 ]
 
