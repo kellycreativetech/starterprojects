@@ -1,7 +1,6 @@
 {% load compress %}
-
 <!--[if lt IE 9]><script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js"></script><![endif]-->
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6/jquery.min.js" type="text/javascript"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>
 <script type="text/javascript">
 var MEDIA_URL = "{{ MEDIA_URL }}",
     STATIC_URL = "{{ STATIC_URL }}",
@@ -14,7 +13,7 @@ var MEDIA_URL = "{{ MEDIA_URL }}",
 // Fallback in case the user is offline or Google's CDN is unavailable.
 if (typeof(jQuery) === 'undefined')
 {
-    document.write(unescape("%3Cscript src='{{ STATIC_URL }}js/jquery.1.6.2.min.js' type='text/javascript'%3E%3C/script%3E"));
+    document.write(unescape("%3Cscript src='{{ STATIC_URL }}js/jquery.1.7.2.min.js' type='text/javascript'%3E%3C/script%3E"));
     //document.write(unescape("%3Cscript src='{{ STATIC_URL }}js/jquery-ui.1.8.14.min.js' type='text/javascript'%3E%3C/script%3E"));
 }
 </script>
@@ -78,8 +77,27 @@ if (typeof(jQuery) === 'undefined')
     });
 }(jQuery));
 </script>
+
+<script src="{{ STATIC_URL }}js/bootstrap-transition.js"></script>
+<script src="{{ STATIC_URL }}js/bootstrap-alert.js"></script>
+<script src="{{ STATIC_URL }}js/bootstrap-modal.js"></script>
+<script src="{{ STATIC_URL }}js/bootstrap-dropdown.js"></script>
+<script src="{{ STATIC_URL }}js/bootstrap-scrollspy.js"></script>
+<script src="{{ STATIC_URL }}js/bootstrap-tab.js"></script>
+<script src="{{ STATIC_URL }}js/bootstrap-tooltip.js"></script>
+<script src="{{ STATIC_URL }}js/bootstrap-popover.js"></script>
+<script src="{{ STATIC_URL }}js/bootstrap-button.js"></script>
+<script src="{{ STATIC_URL }}js/bootstrap-collapse.js"></script>
+<script src="{{ STATIC_URL }}js/bootstrap-carousel.js"></script>
+<script src="{{ STATIC_URL }}js/bootstrap-typeahead.js"></script>
+
 {% endcompress %}
+
+
+
+
 
 {% if request.user.is_staff %}
     <script type="text/javascript" src="{{ STATIC_URL }}servee/js/frontendadmin.js"></script>
 {% endif %}
+
